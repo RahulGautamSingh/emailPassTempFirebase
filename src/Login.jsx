@@ -57,7 +57,7 @@ function Login() {
         console.log(errorCode, errorMessage);
         emailRefL.current.value = "";
         passwordRefL.current.value = "";
-        setError([true,"No such user exists please signup first"])
+        setError([true,error.message])
       });
   }
   function signUp() {
