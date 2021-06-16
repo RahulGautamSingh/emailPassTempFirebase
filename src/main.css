@@ -1,36 +1,92 @@
-
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.main-container{
-    width:100vw;
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    overflow:hidden
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden
 }
-.main-navbar{
-    display:flex;
+
+.main-navbar {
+    display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color:rgb(100, 100, 196);
-    height:13vh;
-    color:white;
+    background-color: rgb(100, 100, 196);
+    height: 13vh;
+    color: white;
 }
-.logoutBtn{
+
+.logoutBtn {
+    display: flex;
+}
+
+.logout-btn {
+    padding: 8px 24px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: rgb(100, 100, 196);
+    border: none
+}
+
+.logout-btn:hover {
+    border-radius: 6px;
+    background-color: rgba(150, 150, 216, 0.582);
+}
+
+.main-body {
+    width: 100vw;
+    height: 87vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+position:relative;
+}
+
+.categoryButtons {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 50px;
+    /* border:1px solid black; */
+    gap: 50px;
+
+}
+
+.categoryBtn {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all 1s;
+  
+}
+
+.categoryBtn:hover {
+    color: white;
+    background-color: black;
+}
+
+
+.category-container{
+    background-color:pink;
     display:flex;
+    width:100%;
+    height:100%
 }
-.logout-btn{
-    padding:8px 24px;
-    font-size:15px;
-    font-weight:400;
-    background-color:rgb(100, 100, 196);
-    border:none
-}
-.logout-btn:hover{
-   border-radius:6px;
-    background-color:rgba(150, 150, 216, 0.582);
+
+.backBtn{
+    width: fit-content;
+    height: fit-content;
+    position:absolute;
+    top:0;
+    left:0;z-index:5;
 }

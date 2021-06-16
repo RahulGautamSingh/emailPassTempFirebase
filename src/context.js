@@ -3,26 +3,17 @@ import { createContext, useReducer } from "react";
 let DatabaseContext = createContext();
 export default DatabaseContext;
 let initialState = {
-  user:{},
+item:{}
+
 };
 function reducer(state, action) {
   switch (action[0]) {
-    case "curr_user":
+    case "add_item":
       return {
-        user: {...action[1]},
+        item: {...action[1]},
       };
 
-    // case "curr_room":
-    //     return{
-    //     user:state.user,
-    //     room:action[1]
-    // }
-
-    // case "set_database":
-    //     return{
-    //         user:action[1].user,
-    //         room:action[1].room
-    //     }
+   
     default:
       return state;
   }
